@@ -1,0 +1,83 @@
+\hypertarget{my__select_8c}{\section{src/my\+\_\+select.c File Reference}
+\label{my__select_8c}\index{src/my\+\_\+select.\+c@{src/my\+\_\+select.\+c}}
+}
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\\*
+{\ttfamily \#include $<$termcap.\+h$>$}\\*
+{\ttfamily \#include $<$ncurses/curses.\+h$>$}\\*
+{\ttfamily \#include $<$termios.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}my.\+h\char`\"{}}\\*
+Include dependency graph for my\+\_\+select.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__select_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{my__select_8c_a54107884475937a6a75a9cf11d24a4e2}{my\+\_\+actualisation} (struct termios $\ast$term)
+\item 
+int \hyperlink{my__select_8c_add91d018cb04acdfb4a5512ca3b19e9d}{my\+\_\+select} (struct termios $\ast$term, \hyperlink{struct_8h_abb3da8aaebffbf4c0c44fc37b91a41af}{t\+\_\+eta} $\ast$etat, int size\+\_\+colone)
+\item 
+int \hyperlink{my__select_8c_ad868f8855e4adc4512d7212c8705225a}{my\+\_\+gere\+\_\+key} (struct termios $\ast$term, \hyperlink{struct_8h_abb3da8aaebffbf4c0c44fc37b91a41af}{t\+\_\+eta} $\ast$etat)
+\item 
+int \hyperlink{my__select_8c_a7c31a994c5ec79ecf4144f4ef717112f}{my\+\_\+gere\+\_\+select} (int argc, char $\ast$$\ast$argv, int size\+\_\+colone, struct termios $\ast$term)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{my__select_8c_a54107884475937a6a75a9cf11d24a4e2}{\index{my\+\_\+select.\+c@{my\+\_\+select.\+c}!my\+\_\+actualisation@{my\+\_\+actualisation}}
+\index{my\+\_\+actualisation@{my\+\_\+actualisation}!my\+\_\+select.\+c@{my\+\_\+select.\+c}}
+\subsubsection[{my\+\_\+actualisation}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+actualisation (
+\begin{DoxyParamCaption}
+\item[{struct termios $\ast$}]{term}
+\end{DoxyParamCaption}
+)}}\label{my__select_8c_a54107884475937a6a75a9cf11d24a4e2}
+
+
+Definition at line 21 of file my\+\_\+select.\+c.
+
+\hypertarget{my__select_8c_ad868f8855e4adc4512d7212c8705225a}{\index{my\+\_\+select.\+c@{my\+\_\+select.\+c}!my\+\_\+gere\+\_\+key@{my\+\_\+gere\+\_\+key}}
+\index{my\+\_\+gere\+\_\+key@{my\+\_\+gere\+\_\+key}!my\+\_\+select.\+c@{my\+\_\+select.\+c}}
+\subsubsection[{my\+\_\+gere\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+gere\+\_\+key (
+\begin{DoxyParamCaption}
+\item[{struct termios $\ast$}]{term, }
+\item[{{\bf t\+\_\+eta} $\ast$}]{etat}
+\end{DoxyParamCaption}
+)}}\label{my__select_8c_ad868f8855e4adc4512d7212c8705225a}
+
+
+Definition at line 56 of file my\+\_\+select.\+c.
+
+\hypertarget{my__select_8c_a7c31a994c5ec79ecf4144f4ef717112f}{\index{my\+\_\+select.\+c@{my\+\_\+select.\+c}!my\+\_\+gere\+\_\+select@{my\+\_\+gere\+\_\+select}}
+\index{my\+\_\+gere\+\_\+select@{my\+\_\+gere\+\_\+select}!my\+\_\+select.\+c@{my\+\_\+select.\+c}}
+\subsubsection[{my\+\_\+gere\+\_\+select}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+gere\+\_\+select (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{int}]{size\+\_\+colone, }
+\item[{struct termios $\ast$}]{term}
+\end{DoxyParamCaption}
+)}}\label{my__select_8c_a7c31a994c5ec79ecf4144f4ef717112f}
+
+
+Definition at line 80 of file my\+\_\+select.\+c.
+
+\hypertarget{my__select_8c_add91d018cb04acdfb4a5512ca3b19e9d}{\index{my\+\_\+select.\+c@{my\+\_\+select.\+c}!my\+\_\+select@{my\+\_\+select}}
+\index{my\+\_\+select@{my\+\_\+select}!my\+\_\+select.\+c@{my\+\_\+select.\+c}}
+\subsubsection[{my\+\_\+select}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+select (
+\begin{DoxyParamCaption}
+\item[{struct termios $\ast$}]{term, }
+\item[{{\bf t\+\_\+eta} $\ast$}]{etat, }
+\item[{int}]{size\+\_\+colone}
+\end{DoxyParamCaption}
+)}}\label{my__select_8c_add91d018cb04acdfb4a5512ca3b19e9d}
+
+
+Definition at line 31 of file my\+\_\+select.\+c.
+
